@@ -1,7 +1,7 @@
 {
-  "name": "sg-jquery-webpack",
+  "name": "sg-jquery-project-weui",
   "version": "1.0.0",
-  "description": "jquery-webpack项目搭建",
+  "description": "一个基于jquery-weui搭建的微信项目",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config build/webpack.dev.config.js",
