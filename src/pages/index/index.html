@@ -1,0 +1,35 @@
+<%= require('html-loader!common/header/head-common.html') %>
+<%= htmlWebpackPlugin.options.title %>
+<%= require('html-loader!common/header/index.html') %>
+
+<!-- 搜索栏 -->
+<div class="weui-search-bar" id="searchBar">
+	<form class="weui-search-bar__form">
+		<div class="weui-search-bar__box">
+			<i class="weui-icon-search"></i>
+			<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+			<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+		</div>
+		<label class="weui-search-bar__label" id="searchText">
+			<i class="weui-icon-search"></i>
+			<span>搜索</span>
+		</label>
+	</form>
+	<a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+</div>
+
+<!-- 下拉刷新 -->
+
+<!-- 滚动加载 -->
+<h1 class="demos-title">滚动加载</h1>
+<div id="list" class='demos-content-padded'>
+	<% for(var i=0;i<5;i++) { %>
+		<p>《世界著名计算机教材精选·人工智能:一种现代的方法(第3版)》是最权威、最经典的人工智能教材，已被全世界100多个国家的1200多所大学用作教材。《世界著名计算机教材精选·人工智能:一种现代的方法(第3版)》的最新版全面而系统地介绍了人工智能的理论和实践，阐述了人工智能领域的核心内容，并深入介绍了各个主要的研究方向。全书分为七大部分：第Ⅰ部分“人工智能”，第Ⅱ部分“问题求解”，第Ⅲ部分“知识、推理与规划”，第Ⅳ部分“不确定知识与推理”，第Ⅴ部分“学习”，第Ⅵ部分“通信、感知与行动”，第Ⅶ部分“结论”。《世界著名计算机教材精选·人工智能:一种现代的方法(第3版)》既详细介绍了人工智能的基本概念、思想和算法，还描述了其各个研究方向最前沿的进展，同时收集整理了详实的历史文献与事件。《世界著名计算机教材精选·人工智能:一种现代的方法(第3版)》适合于不同层次和领域的研究人员及学生，是高等院校本科生和研究生人工智能课的首选教材，也是相关领域的科研与工程技术人员的重要参考书。</p>
+	<% } %>
+</div>
+<div class="weui-loadmore">
+	<i class="weui-loading"></i>
+	<span class="weui-loadmore__tips">正在加载</span>
+</div>
+
+<%= require('html-loader!common/footer/index.html') %>
