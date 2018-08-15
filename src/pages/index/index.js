@@ -2,10 +2,9 @@
 import './index.less';
 import util from 'utils/util.js';
 
-// 页面
 const page = {
     init : function(){
-        this.onLoad();
+        // this.onLoad();
         this.bindEvent();
     },
     onLoad : function(){
@@ -15,8 +14,6 @@ const page = {
     },
     bindEvent : function(){
         const _this = this;
-    },
-    bindEvent : function(){
         let loading = false;
         $(document.body).infinite().on("infinite", function () {
             if (loading) return;
@@ -26,9 +23,12 @@ const page = {
             //     loading = false;
             // }, 2000);
         });
+        $("#showDate").datetimePicker({
+            
+        });
     },
 };
 
 $(function(){
     page.init();
-})
+});

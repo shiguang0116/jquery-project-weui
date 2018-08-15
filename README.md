@@ -1,4 +1,4 @@
-﻿# sg-jquery-project-weui
+﻿# jquery-project-weui
 
 > 一个基于jquery-weui搭建的微信项目
 
